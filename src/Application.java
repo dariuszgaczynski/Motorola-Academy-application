@@ -11,7 +11,6 @@ public class Application {
 
         String fileName = "Words.txt";
         Queue<String> words = GameManagment.readFile(fileName);
-        System.out.println(words);
         Game newGame = GameManagment.chooseGameType();
         Instant i1 = Instant.now();
         String[][] gameArray = GameManagment.loadGame(newGame, words);
